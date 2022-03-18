@@ -1,0 +1,363 @@
+/*********** Résolution inférieur à 768px ***********/
+
+    /********** Header **********/  
+    
+    #booki img { /* Paramètre de la taille du logo Booki */
+        width: 90px;
+    }
+
+    header { /* Permet de placer le logo et la navigation sur la page */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0;
+    }
+    
+    nav { /* Permet de définir la taille d'Herbergements et Activités dans la navigation */
+        width: 100%;
+    }
+
+     nav a { /* Paramètre des noms de la barre de navigation qui n'est pas active */
+       text-decoration: none;
+       font-weight: 600;
+       padding: 20px 50px 10px 50px;
+       color: black;
+       border-bottom: 3px solid #F2F2F2;
+     }
+     
+     nav a:hover { /* Paramètre des noms de la barre de navigation qui est active */
+       color: #0065fc;
+       border-bottom: 3px solid #0065fc;
+       border-top: none;
+     }
+     
+     
+     .active_conteneur { /* Permet de centrer le contenu de la bordure et du nom de la page actuelle */
+       display: flex;
+       justify-content: center;
+     }
+
+    /********** Main **********/
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .form_filtre { /* Paramètre les filtres en colonnes */
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+
+    .form_filtre h3 { /* Réduire la marge en-dessous du titre h3 */
+        display: flex;
+        margin: 0;
+    }
+    
+    .form_filtre .sous_titre { /* Paramètrer la distance entre le titre et le sous-titre */
+        display: flex;
+        margin-top: 10px;
+    }
+        
+    /********** Formulaire de Recherche **********/
+
+    .formulaire span { /* Paramètre de l'icône map */
+        height: 45px;
+    }
+
+    main input { /* Paramètre de la barre de recherche */
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    .formulaire .button_desktop { /* Masque le bouton texte "Rechercher" du desktop & tablette */
+        display: none;
+    }
+
+    .formulaire .button_mobile { /* Paramètre du bouton Rechercher version Mobile */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        width: 45px;
+        height: 45px;
+        background-color: #0065fc;
+        color: white;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border: none;
+    }
+
+    /********** Filtres **********/
+
+    .filtre_conteneur { /* Paramètre le texte "Filtres" en-dessous de la barre de recherche et côte à côte des filtres */
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .filtre_titre { /* Paramètre le style de la police d'écriture de "Filtres" et son positionnement */
+        display: flex;
+        align-items: inherit;
+        font-weight : 700;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .form_filtre ul { /* Permet de mettre les différents filtres côte à côte et centré sur l'axe horizontal */
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .filtre_choix { /* Paramètre le contour et la forme des filtres */
+        display: flex;
+        margin: 10px 20px;
+    }
+
+    /********** Point Information **********/
+
+    .info_logo_conteneur { /* Paramètre le style du contour de l'icône information */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        padding: 4px;
+        border: 2px solid #DEEBFF;
+        color: #0065FC;
+        margin-right: 2%;
+    }
+
+    /********** Main Hébergements et Populaires **********/
+
+    .main_contenu_hp { /* Permet de mettre le contenu hébergement et populaire côte à côte */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /********** Populaires **********/
+
+    .populaire { /* Paramètre du fond gris pour les cartes populaires */
+        margin: 0px;
+        padding: 0px;
+        border-radius: inherit;
+        background-color: #F2F2F2;
+        width: 100%;
+    }
+
+    /********** Carte Populaire **********/
+
+    .carte_populaire { /* Paramètre du contour et fond de la carte populaire ainsi que l'ombre */
+        display: flex;
+        width: 300px;
+        height: 120px;
+        padding: 5px;
+        margin: 8px 0;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        border-radius: 15px;
+    }
+
+    .carte_populaire .carte_contenu { /* Paramètre pour centrer le contenu de la carte populaire */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 15px;
+    }
+
+    .carte_populaire .carte_nom { /* Paramètre pour la police du nom d'hôtel dans la carte populaire */
+        display: flex;
+        font-weight: 700;
+        font-size: 100%;
+        padding-top: 10px;
+    }
+
+    .carte_populaire .carte_image { /* Paramètre pour centrer l'image de la carte populaire */
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+        object-fit: cover;
+        width: 110px;
+        height: 100%;
+    }
+
+    .populaire .carte_titre { /* Paramètre l'icône graph côte à côte avec le titre */
+        display: flex;
+        padding: 0px 20px;
+        margin-bottom: 15px;
+    }
+
+    .carte_populaire .carte_prix { /* Paramètre pour la police du prix dans la carte populaire */
+        font-weight: 500;
+    }
+
+    .carte_populaire .etoiles { /* Paramètre pour la taille et l'emplacement des étoiles de la carte populaire */
+        display: flex;
+        font-size: 80%;
+        /* margin-top: 30px; */
+    }
+      
+    /********** Hébergements **********/
+
+    section .hebergement { /* Paramètre du fond gris pour les cartes hébergements */
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 20px 0;
+        border-radius: inherit;
+        background-color: inherit;
+    }
+
+    .main_carte_hebergement { /* Paramètre les cartes hébergements côte à côte, avec retour à la ligne */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0;
+    }
+
+    .hebergement h2 { /* Paramètre l'emplacement du titre */
+        padding-left: 20px;
+    }
+
+    .afficher_plus { /* Paramètre le style et l'emplacement du bouton "Afficher plus" */
+        padding-left: 20px;
+        font-weight: 700;
+        font-size: 19px;
+      }
+
+    /********** Carte Hebergement **********/
+
+    .carte_hebergement { /* Paramètre du contour et fond de la carte hébergement plus le positionnement dans la box */
+        width: 320px;
+        height: 200px;
+        padding: 0;
+        margin: 10px 0;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        border-radius: 15px;
+    }
+
+    .carte_hebergement .carte_nom { /* Paramètre de l'écriture du nom de l'hôtel dans la carte */
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+      
+      .carte_hebergement .carte_prix { /* Paramètre de l'écriture de la nuit et du prix dans la carte */
+        margin-top: 5px;
+      }
+
+    /********** Activité **********/
+
+    .activite {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .activite h2 { /* Paramètre du positionnement du titre "Activités à Marseille" par rapport au bloc du dessus */
+        margin: 20px;
+    }
+
+    .main_contenu_a a { /* Paramètre les images côte à côte dans le bloc Activité */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-decoration: none;
+      }
+      
+    /********** Carte Activité **********/
+    
+    .carte_activite_mp .carte_image { /* Paramètre de l'image de la carte activité */
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        object-fit: cover;
+        height: 75%;
+    }
+
+    .carte_activite.grande .carte_image { /* Paramètre de l'image de la carte activité */
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        object-fit: cover;
+        height: 75%;
+    }
+
+    .carte_activite_mp { /* Paramètre du positionnement et de la taille des moyennes et petites cartes */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .carte_activite .carte_nom { /* Paramètre de la police du nom de l'activité des cartes */
+        margin: 10px 15px;
+    }
+
+    .carte_activite.grande { /* Paramètre de l'image de la carte activité */
+        width: 340px;
+        height: 200px;
+    }
+    
+    .carte_activite.pomegues {
+        width: 340px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .carte_activite.frioul {
+        width: 340px;
+        height: 200px;
+    }
+    
+    .carte_activite.garde {
+        width: 340px;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .carte_activite.longchamp {
+        width: 340px;
+        height: 200px;
+    }
+
+/********** Bas de la page **********/
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    border-radius: inherit;
+    background-color: #F2F2F2;
+    width: 100%;
+}
+
+.main_contenu_footer { /* Paramètre la couleur du fond et permet de mettre côte à côte le contenu */
+    display: flex;
+    flex-direction: column;
+    align-items: inherit;
+    width: 300px;
+    padding: 15px;
+  }
+  
+.main_contenu_footer li { /* Permet de mettre en forme la liste de chaque contenu avec l'espacement */
+    padding : 10px 0;
+}
+
+.contenu_footer { /* Pemert de mettre de l'espace en bas des sections du footer */
+    padding-bottom: 20px;
+}
+
+.contenu_footer h2 { /* Placement des titres du footer */
+    margin-top: 0;
+    margin-bottom: 15px;
+}

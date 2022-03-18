@@ -1,0 +1,181 @@
+/*********** Résolution compris entre 768px et 992px ***********/
+
+    /********** Corps de la page **********/
+
+    /********** Header **********/
+
+    nav { /* Permet de définir la taille d'Herbergements et Activités dans la navigation */
+        width: 350px;
+    }
+    
+    /********** Filtres **********/
+      
+    .form_filtre ul { /* Permet de mettre les différents filtres côte à côte et centré sur l'axe horizontal */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px 5px;
+        margin: 0;
+    }
+
+    .filtre_titre { /* Permet de mettre une marge à droite du Filtres */
+        margin-right: 15px;
+    }
+
+    .filtre_choix { /* Paramètre la taille de la marge autour des filtres */
+        display: flex;
+        margin: 10px 20px;
+    }
+
+    /********** Hébergements et Populaires **********/
+
+    .main_contenu_hp { /* Permet de mettre le contenu hébergement et populaire côte à côte */
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    /********** Populaires **********/
+
+    .populaire { /* Paramètre du fond gris pour les cartes populaires */
+        width: 550px;
+        border-radius: 15px;
+        background-color: #F2F2F2;
+    }
+
+    /********** Carte Populaire **********/
+
+    .carte_populaire { /* Paramètre du contour et fond de la carte populaire ainsi que l'ombre */
+        display: flex;
+        width: 450px;
+        height: 180px;
+        padding: 5px;
+        margin: 12px 0;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        border-radius: 15px;
+    }
+
+    .carte_populaire .carte_contenu { /* Paramètre pour centrer le contenu de la carte populaire */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 0 5%;
+    }
+
+   /********** Hébergements **********/
+
+    section .hebergement { /* Paramètre du bloc Hébergements à Marseille */
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 3%;
+    margin: 40px 0;
+    border-radius: 15px;
+    background-color: #F2F2F2;
+    }
+    
+    section h2 {
+        margin: 0;
+    }
+    
+    .main_carte_hebergement { /* Paramètre le bloc des cartes Hébergements */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+    
+    /********** Carte Hebergement **********/
+    
+    .carte_hebergement { /* Paramètre du contour et fond de la carte hébergement plus le positionnement dans la box */
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        margin: 15px 0%;
+        background-color: white;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        border-radius: 15px;
+    }
+
+    /********** Activité **********/
+
+    .activite {
+        align-items: center;
+        justify-content: center;
+        width: 550px;
+        padding-top: 3%;
+        margin: auto;
+        border-radius: 15px;
+        background-color: #F2F2F2;
+    }
+
+    .activite h2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    .main_contenu_a a { /* Paramètre les images côte à côte dans le bloc Activité */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        text-decoration: none;
+    } 
+
+    /********** Carte Activité **********/
+
+    .carte_activite .carte_nom { /* Paramètre de la police du nom de l'activité des cartes */
+        margin: 10px;
+        font-weight: 800;
+    }
+
+    .carte_activite .carte_image { /* Paramètre de l'image de la carte activité */
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        object-fit: cover;
+        height: 70%;
+    }
+
+    .carte_activite_mp {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 40%;
+        margin: 0;
+    }
+
+    /* Paramètre pour régler la taille que prends l'image dans la box */
+    .carte_activite.grande {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 390px;
+        margin-bottom: 30px;
+    }
+    
+    .carte_activite.pomegues {
+        height: 200px;
+        margin-bottom: 30px;
+    }
+    
+    .carte_activite.frioul {
+        height: 140px;
+    }
+    
+    .carte_activite.garde {
+        height: 190px;
+        margin-bottom: 30px;
+    }
+    
+    .carte_activite.longchamp {
+        height: 150px;
+    }
+  /******** Fin du bloc paramètre réglage taille d'image ********/

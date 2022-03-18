@@ -1,0 +1,497 @@
+/********** Définition des polices personnalisées **********/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/********** Corps de la page **********/
+
+html {
+  scroll-behavior: smooth; /* Permet de dérouler la page lentement lors d'un clique qui mène à une balise */
+}
+
+body
+{
+  font-family: 'Raleway', sans-serif; /* Police d'écriture de la page */
+  max-width: 1440px; /* Définition de la taille maximal en pixels */
+  margin: 0 auto;
+}
+
+/********** Header **********/
+#booki img { /* Paramètre de la taille du logo Booki */
+  width: 120px;
+}
+
+header { /* Permet de placer le logo et la navigation sur la page */
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 5% 40px 5%;
+}
+
+/********** Navigation *********/
+
+nav { /* Permet de définir la taille d'Herbergements et Activités dans la navigation */
+   width: 350px;
+}
+
+nav ul { /* Permet de centrer les noms de la barre de navigation sur la page */
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav a { /* Paramètre des noms de la barre de navigation qui n'est pas active */
+  text-decoration: none;
+  font-weight: 600;
+  padding: 40px 20px 0 20px;
+  color: black;
+  border-top: 3px solid white;
+}
+
+nav a:hover { /* Paramètre des noms de la barre de navigation qui est active */
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+}
+
+
+.active_conteneur { /* Permet de centrer le contenu de la bordure et du nom de la page actuelle */
+  display: flex;
+  justify-content: center;
+}
+
+/********** Main **********/
+
+main {
+  margin: 0 5%;
+}
+
+.form_filtre h3 { /* Réduire la marge en-dessous du titre h3 */
+  margin: 0;
+}
+
+.form_filtre .sous_titre { /* Paramètrer la distance entre le titre et le sous-titre */
+  margin-top: 10px;
+}
+
+/********** Formulaire de Recherche **********/
+
+.formulaire { /* Permet de metttre l'icône map côte à côte avec la barre de recherche */
+  display: flex;
+}
+
+.formulaire span { /* Paramètre de l'icône map */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: auto;
+  font-size: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: #F2F2F2;
+}
+
+main input { /* Paramètre de la barre de recherche */
+  font-family: 'Raleway', sans-serif;
+  font-weight : 700;
+  font-size: 100%;
+  padding-left: 1%;
+  border: 1.5px solid #F2F2F2;
+}
+
+.formulaire .button_desktop { /* Paramètre du bouton Rechercher */
+  font-family: 'Raleway', sans-serif;
+  font-weight : 600;
+  font-size: 100%;
+  background-color: #0065fc;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 1% 1%;
+  border: none;
+}
+
+.formulaire .button_mobile { /* Permet de cacher le bouton version mobile en format Desktop */
+  display: none;
+}
+
+/********** Filtres **********/
+
+.filtre_conteneur { /* Paramètre le texte "Filtres" en-dessous de la barre de recherche et côte à côte des filtres */
+  display: flex;
+  margin-top: 2%;
+}
+
+.filtre_titre { /* Paramètre le style de la police d'écriture de "Filtres" et son positionnement */
+  display: flex;
+  align-items: center;
+  font-weight : 700;
+  font-size: 100%;
+}
+
+.form_filtre ul { /* Permet de mettre les différents filtres côte à côte et centré sur l'axe horizontal */
+  display: flex;
+}
+
+.filtre_choix { /* Paramètre le contour et la forme des filtres */
+  display: flex;
+  align-items: center;
+  border: 3px solid #F2F2F2;
+  list-style-type: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  transition: all;
+  margin: 0% 5%;
+  transition-duration: 500ms;
+}
+
+.filtre_choix:hover {
+  color: white;
+  transform: scale(1.1);
+  background:#0065FC radial-gradient(circle, transparent 1%, #0065FC 1%) center/15000%;
+}
+
+.filtre_choix a { /* Paramètre le style de la police des filtres */
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 100%;
+  white-space: nowrap;
+  padding: 5% 20px;
+  text-align: center;
+  color: black;
+}
+
+.filtre_logo { /* Paramètre la taille des icônes des filtres */
+  width: 50%;
+	height: 50%;
+}
+
+.logo_conteneur { /* Paramètre le style et la forme des icônes des filtres */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0065FC;
+  position: absolute;
+  border-radius: 100%;
+  width: 45px;  
+  height: 45px;
+  left: -30px;
+  background-color: #DEEBFF;
+}
+
+/********** Point Info **********/
+
+.info_conteneur { /* Permet de mettre l'icône information côte à côte du texte et centré sur l'axe horizontal */
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.info_logo_conteneur { /* Paramètre le style du contour de l'icône information */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 2%;
+  height: 3%;
+  padding: 4px;
+  border: 2px solid #DEEBFF;
+  color: #0065FC;
+  margin-right: 2%;
+}
+
+.info_titre { /* Parametre de la police du titre au point information */
+  font-weight: 500;
+  font-size: 100%;
+}
+
+/********** Main Hébergement et Populaire **********/
+
+.main_contenu_hp { /* Permet de mettre le contenu hébergement et populaire côte à côte */
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/********** Hébergements **********/
+
+section .hebergement { /* Paramètre du bloc Hébergements à Marseille */
+  width: 57%;
+  padding: 2%;
+  border-radius: 15px;
+  background-color: #F2F2F2;
+}
+
+section h2 {
+  margin: 0;
+}
+
+.main_carte_hebergement { /* Paramètre le bloc des cartes Hébergements */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.afficher_plus { /* Paramètre le style et l'emplacement du bouton "Afficher plus" */
+  display: block;
+  font-weight: 700;
+  font-size: 100%;
+  color: black;
+  text-decoration: none;
+  margin-top: 40px;
+}
+
+/********** Carte Hebergement **********/
+
+.carte_hebergement { /* Paramètre du contour et fond de la carte hébergement plus le positionnement dans la box */
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 200px;
+  padding: 0.5%;
+  margin: 20px 0 20px 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+.carte_hebergement .carte_image { /* Paramètre de l'image de la carte hébergement */
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 120px;
+}
+
+.carte_hebergement .carte_contenu { /* Permet d'aligné le texte et les étoiles de la carte */
+  padding-left: 5px;
+}
+
+.carte_hebergement .carte_nom { /* Paramètre de l'écriture du nom de l'hôtel dans la carte */
+  display: flex;
+  font-weight: 800;
+  font-size: 80%;
+  margin-top: 10px;
+  margin-bottom: 0%;
+  color: black;
+}
+
+.carte_hebergement .carte_prix { /* Paramètre de l'écriture de la nuit et du prix dans la carte */
+  display: flex;
+  font-weight: 500;
+  margin: 10px 0;
+  font-size: 80%;
+  color: black;
+}
+
+.carte_hebergement .etoiles { /* Paramètre des étoiles dans la carte */
+  display: flex;
+  font-size: 80%;
+}
+
+.carte_hebergement a { /* Retire les décorations du texte de la carte hébergement */
+  text-decoration: none;
+}
+
+.blue-star { /* Etoile bleu */
+  color: #0065FC;
+}
+
+.grey-star { /* Etoile grise */
+  color: #F2F2F2;
+}
+
+/********** Populaires **********/
+
+.populaire { /* Paramètre du fond gris pour les cartes populaires */
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 20px 35px;
+  margin: 0 0 0 25px;
+  border-radius: 15px;
+  background-color: #F2F2F2;
+}
+
+.main_carte_populaire { /* Paramètre pour centrer et espacer correctement les cartes populaires */
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.populaire .carte_titre { /* Paramètre l'icône graph côte à côte avec le titre */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.populaire .logo_chart { /* Paramètre la taille de l'icône */
+  font-size: 25px;
+}
+
+/********** Carte Populaire **********/
+
+.carte_populaire { /* Paramètre du contour et fond de la carte populaire ainsi que l'ombre */
+  display: flex;
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 15px;
+}
+
+.carte_populaire .carte_contenu { /* Paramètre pour centrer le contenu de la carte populaire */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 5%;
+}
+
+.carte_populaire .carte_image { /* Paramètre pour centrer l'image de la carte populaire */
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  object-fit: cover;
+  width: 133px;
+  height: 100%;
+}
+
+.carte_populaire .carte_nom { /* Paramètre pour la police du nom d'hôtel dans la carte populaire */
+  display: flex;
+  font-weight: 800;
+  font-size: 110%;
+  margin: 0;
+  color: black;
+}
+
+.carte_populaire .carte_prix { /* Paramètre pour la police du prix dans la carte populaire */
+  display: flex;
+  font-weight: 500;
+  font-size: 90%;
+  margin-top: 5%;
+  color: black;
+}
+
+.main_carte_populaire a { /* Retire les décorations du texte de la carte populaire */
+  text-decoration: none;
+}
+
+.carte_populaire .etoiles { /* Paramètre pour la taille et l'emplacement des étoiles de la carte populaire */
+  display: flex;
+  font-size: 80%;
+}
+
+/********** Activité **********/
+
+.activite {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.activite h2 { /* Paramètre du positionnement du titre "Activités à Marseille" par rapport au bloc du dessus */
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+
+.main_contenu_a a { /* Paramètre les images côte à côte dans le bloc Activité */
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+}
+
+
+/********** Carte Activité **********/
+
+.carte_activite { /* Paramètre du fond et de la taille du contour de la carte activité */
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  border-radius: 15px;
+ }
+
+.carte_activite_mp { /* Paramètre du positionnement et de la taille des moyennes et petites cartes */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25%;
+  margin: 0 30px;
+}
+
+.carte_activite .carte_image { /* Paramètre de l'image de la carte activité */
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  object-fit: cover;
+  width: 100%;
+  height: 70%;
+}
+
+.carte_activite .carte_nom { /* Paramètre de la police du nom de l'activité des cartes */
+  margin: 20px;
+  font-weight: 800;
+  font-size: 100%;
+  color: black;
+}
+
+/* Paramètre pour régler la taille que prends l'image dans la box */
+.carte_activite.grande {
+  width: 25%;
+  height: 450px;
+}
+
+.carte_activite.grande .carte_image {
+  height: 83%;
+}
+
+.carte_activite.pomegues {
+  width: 100%;
+  height: 230px;
+}
+
+.carte_activite.frioul {
+  width: 100%;
+  height: 170px;
+}
+
+.carte_activite.garde {
+  width: 100%;
+  height: 220px;
+}
+
+.carte_activite.longchamp {
+  width: 100%;
+  height: 180px;
+}
+
+/******** Fin du bloc paramètre réglage taille d'image ********/
+
+/********** Bas de la page **********/
+
+.main_contenu_footer { /* Paramètre la couleur du fond et permet de mettre côte à côte le contenu */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F2F2F2;
+  width: 100%;
+  padding: 0;
+  margin-top: 4%;
+  list-style-type: none;
+}
+
+.main_contenu_footer li { /* Permet de mettre en forme la liste de chaque contenu avec l'espacement */
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  padding : 10px 0;
+}
+
+.contenu_footer ul { /* Permet de centrer la liste sur le titre de chaque contenu */
+  margin: 0;
+  padding: 0;
+}
